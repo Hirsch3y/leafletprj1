@@ -1,26 +1,17 @@
 var map = L.map('map').setView([44.3967, -122.48], 8);
 
-var Esri_NatGeoWorldMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
-	attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
-	maxZoom: 16
-}).addTo(map);
+var Esri_NatGeoWorldMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', 
+	{attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',maxZoom: 16}).addTo(map);
 
- $.getJSON("https://raw.githubusercontent.com/Hirsch3y/leafletprj1/main/volc2.geojson",function(data){
-         var vIcon = L.icon({
-    iconUrl: 'https://preview.pixlr.com/images/800wm/1264/2/1264100780.jpg',
-    iconSize: [25,25]
-  }); 
-  var volcanos= L.geoJson(data  ,{
-    pointToLayer: function(Feature,latlng){
-	    var marker = L.marker(latlng,{icon: vIcon});
-        marker.bindPopup(Feature.properties.Location + '<br/>' + Feature.properties + '<br/>' + Feature.properties);
-        return marker;
-      }
+$.getJSON("https://raw.githubusercontent.com/Hirsch3y/leafletprj1/main/volc2.geojson",function(data){
+  var vIcon = L.icon({iconUrl: 'https://preview.pixlr.com/images/800wm/1264/2/1264100780.jpg',iconSize: [25,25]}); 
+  var volcanos= L.geoJson(data  ,{pointToLayer: function(Feature,latlng){
+  var marker = L.marker(latlng,{icon: vIcon});
+  marker.bindPopup(Feature.properties.Location + '<br/>' + Feature.properties + '<br/>' + Feature.properties);return marker;}
     });
-var clusters = L.markerClusterGroup();
-    clusters.addLayer(volcanos);
-    map.addLayer(clusters);
-});
+  var clusters = L.markerClusterGroup();clusters.addLayer(volcanos);map.addLayer(clusters);
+    });
+
 var geojsonFeature = {
   "type": "FeatureCollection",
   "features": [
@@ -395,11 +386,6 @@ var geojsonFeature = {
   ]
 };   
 function onEachFeature(Feature, layer) {
-    if (Feature.properties && Feature.properties["Prominent Volcano"]+"<br/>"+Feature.properties["Volcanic Arc"]+"<br/>"+Feature.properties["Last Erupted"]+"<br/>"+Feature.properties["Type"]) 
-    {
-        layer.bindPopup(Feature.properties["Prominent Volcano"]+"<br/>"+Feature.properties["Volcanic Arc"]+"<br/>"+Feature.properties["Last Erupted"]+"<br/>"+Feature.properties["Type"]);
-    }
-  }
-var feat = L.geoJSON(geojsonFeature, {
-    onEachFeature: onEachFeature
-}).addTo(map);
+	if (Feature.properties && Feature.properties["Prominent Volcano"]+"<br/>"+Feature.properties["Volcanic Arc"]+"<br/>"+Feature.properties["Last Erupted"]+"<br/>"+Feature.properties["Type"]) 
+    {layer.bindPopup(Feature.properties["Prominent Volcano"]+"<br/>"+Feature.properties["Volcanic Arc"]+"<br/>"+Feature.properties["Last Erupted"]+"<br/>"+Feature.properties["Type"]);}}
+var feat = L.geoJSON(geojsonFeature, {onEachFeature: onEachFeature}).addTo(map);
