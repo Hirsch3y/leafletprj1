@@ -1,0 +1,239 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Cascade Subduction Zone": "Mount Hood ",
+        "Volcano Type": "Stratovolcano",
+        "Last Erupted": 1866
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.69589996337889,
+          45.37352369033132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Cascade Subduction Zone": "Boring Lava Field",
+        "Volcano Type": "Volcanic Field",
+        "Last Erupted": "Pleistocene"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.50041246414185,
+              45.300474990242265
+            ],
+            [
+              -122.50058412551878,
+              45.29840719969206
+            ],
+            [
+              -122.49549865722656,
+              45.29715441399003
+            ],
+            [
+              -122.49266624450684,
+              45.29984107706719
+            ],
+            [
+              -122.49747276306152,
+              45.301803166293865
+            ],
+            [
+              -122.50041246414185,
+              45.300474990242265
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Cascade Subduction Zone": "Black Butte",
+        "Volcano Type": "Cinder Cone",
+        "Last Erupted": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.05814027786255,
+          43.569602279727356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Cascade Subduction Zone": "Mount Jefferson",
+        "Volcano Type": "Stratovolcano",
+        "Last Erupted": "950 AD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.799,
+          44.674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Cascade Subduction Zone": "Hayrick Butte",
+        "Volcano Type": "Tuya ",
+        "Last Erupted": "Pleistocene"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.871,
+          44.399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Cascade Subduction Zone": "Broken Top",
+        "Volcano Type": "Stratovolcano",
+        "Last Erupted": "100,000 BP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.69830322265625,
+          44.08265280537317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Cascade Subduction Zone": "Mount McLoughlin",
+        "Volcano Type": "Stratovolcano",
+        "Last Erupted": "20,000 BP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.315,
+          42.445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Cascade Subduction Zone": "Three Fingered Jack",
+        "Volcano Type": "Shield Volcano",
+        "Last Erupted": "Pleistocene"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.845,
+          44.478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Cascade Subduction Zone": "Crater Lake",
+        "Volcano Type": "Caldera",
+        "Last Erupted": "4,800 BP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.1075439453125,
+          42.94033923363181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Cascade Subduction Zone": "Mount Rainier",
+        "Volcano Type": "Stratovolcano",
+        "Last Erupted": 1894
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.69006347656249,
+          46.830133640447386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Cascade Subduction Zone": "Mount Baker",
+        "Volcano Type": "Stratovolcano",
+        "Last Erupted": 1846
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.81365966796874,
+          48.777007776767704
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Cascade Subduction Zone": "Glacier",
+        "Volcano Type": "Stratovolcano",
+        "Last Erupted": 1700
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.01715087890625,
+          48.191725575618726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Cascade Subduction Zone": "Lassen Peak",
+        "Volcano Type": "Stratovolcano",
+        "Last Erupted": 1921
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.5039825439453,
+          40.488476312020666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Cascade Subduction Zone": "Mount St. Helens",
+        "Volcano Type": "Stratovolcano",
+        "Last Erupted": "2008/1980"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.18891143798828,
+          46.198844376182535
+        ]
+      }
+    }
+  ]
+}
